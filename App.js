@@ -6,9 +6,7 @@ import {getDistance, getPreciseDistance} from 'geolib';
 export default function App() {
   const [location, setLocation] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
-  var Dataset = [{ name: "Ahle Hadees Masjid (Rough)", latitude: 28.557531, longitude: 77.292735 },
-    { name: "Bilal Masjid (Rough)", latitude: 28.558281, longitude: 77.294032 }
-  ];
+  var Dataset = [];
   useEffect(() => {
     (async () => {
       if (Platform.OS === 'android' && !Constants.isDevice) {
